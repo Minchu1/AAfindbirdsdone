@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Information</title>
+    <link rel="stylesheet" type="text/css" href="birdsAround.css">
+</head>
+<body>
+    <h1>Bird Information</h1>
+    <div id="quiz">
+        <p>Is the bird from New Zealand or Non-New Zealand?</p>
+        <button onclick="selectRegion('nz')" class="button-52" role="button">New Zealand</button>
+        <button onclick="selectRegion('nonNz')" class="button-52" role="button">Non-New Zealand</button>
+    </div>
+    <div id="endangered" style="display: none;">
+        <p>Is the bird endangered or non-endangered?</p>
+        <button onclick="selectStatus('endangered')" class="button-52" role="button">Endangered</button>
+        <button onclick="selectStatus('nonEndangered')" class="button-52" role="button">Non-Endangered</button>
+    </div>
+    <div id="birdInfo" style="display: none;">
+        <h2>Bird Information</h2>
+        <ul id="birdList"></ul>
+    </div>
+
+    <script type="module" src="birdsAround.js"></script>
+</body>
+</html>
